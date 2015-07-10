@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "agitr")
+set(agitr_MAINTAINER "He Sun <hesun@princeton.edu>")
+set(agitr_DEPRECATED "")
+set(agitr_VERSION "0.0.1")
+set(agitr_BUILD_DEPENDS "roscpp" "geometry_msgs" "turtlesim")
+set(agitr_RUN_DEPENDS "roscpp" "geometry_msgs" "turtlesim")
+set(agitr_BUILDTOOL_DEPENDS "catkin")

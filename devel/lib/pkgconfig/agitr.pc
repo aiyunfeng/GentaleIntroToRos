@@ -1,0 +1,8 @@
+prefix=/home/he/ros/devel
+
+Name: agitr
+Description: Description of agitr
+Version: 0.0.1
+Cflags: 
+Libs: -L/home/he/ros/devel/lib 
+Requires: 
