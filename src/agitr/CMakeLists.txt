@@ -101,6 +101,8 @@ add_executable(publish_velocity pubvel.cpp)
 add_executable(subscribe_to_pose subpose.cpp)
 add_executable(count_and_log count.cpp)
 add_executable(reverse_cmd_vel reverse_cmd_vel.cpp)
+add_executable(set_bg_color set_bg_color.cpp)
+add_executable(publish_velocity_with_max pubvel_with_max.cpp)
 ## Add cmake target dependencies of the executable/library
 ## as an example, message headers may need to be generated before nodes
 # add_dependencies(agitr_node agitr_generate_messages_cpp)
@@ -111,6 +113,8 @@ target_link_libraries(publish_velocity ${catkin_LIBRARIES})
 target_link_libraries(subscribe_to_pose ${catkin_LIBRARIES})
 target_link_libraries(count_and_log ${catkin_LIBRARIES})
 target_link_libraries(reverse_cmd_vel ${catkin_LIBRARIES})
+target_link_libraries(set_bg_color ${catkin_LIBRARIES})
+target_link_libraries(publish_velocity_with_max ${catkin_LIBRARIES})
 #############
 ## Install ##
 #############

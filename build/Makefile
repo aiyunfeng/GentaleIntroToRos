@@ -319,6 +319,19 @@ publish_velocity/fast:
 .PHONY : publish_velocity/fast
 
 #=============================================================================
+# Target rules for targets named publish_velocity_with_max
+
+# Build rule for target.
+publish_velocity_with_max: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 publish_velocity_with_max
+.PHONY : publish_velocity_with_max
+
+# fast build rule for target.
+publish_velocity_with_max/fast:
+	$(MAKE) -f agitr/CMakeFiles/publish_velocity_with_max.dir/build.make agitr/CMakeFiles/publish_velocity_with_max.dir/build
+.PHONY : publish_velocity_with_max/fast
+
+#=============================================================================
 # Target rules for targets named reverse_cmd_vel
 
 # Build rule for target.
@@ -408,6 +421,19 @@ rosgraph_msgs_generate_messages_py: cmake_check_build_system
 rosgraph_msgs_generate_messages_py/fast:
 	$(MAKE) -f agitr/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make agitr/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
 .PHONY : rosgraph_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named set_bg_color
+
+# Build rule for target.
+set_bg_color: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 set_bg_color
+.PHONY : set_bg_color
+
+# fast build rule for target.
+set_bg_color/fast:
+	$(MAKE) -f agitr/CMakeFiles/set_bg_color.dir/build.make agitr/CMakeFiles/set_bg_color.dir/build
+.PHONY : set_bg_color/fast
 
 #=============================================================================
 # Target rules for targets named std_msgs_generate_messages_cpp
@@ -565,6 +591,7 @@ help:
 	@echo "... geometry_msgs_generate_messages_py"
 	@echo "... hello"
 	@echo "... publish_velocity"
+	@echo "... publish_velocity_with_max"
 	@echo "... reverse_cmd_vel"
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... roscpp_generate_messages_lisp"
@@ -572,6 +599,7 @@ help:
 	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_py"
+	@echo "... set_bg_color"
 	@echo "... std_msgs_generate_messages_cpp"
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_py"
