@@ -293,8 +293,10 @@ agitr/all: agitr/CMakeFiles/count_and_log.dir/all
 agitr/all: agitr/CMakeFiles/hello.dir/all
 agitr/all: agitr/CMakeFiles/publish_velocity.dir/all
 agitr/all: agitr/CMakeFiles/publish_velocity_with_max.dir/all
+agitr/all: agitr/CMakeFiles/pubvel_toggle.dir/all
 agitr/all: agitr/CMakeFiles/reverse_cmd_vel.dir/all
 agitr/all: agitr/CMakeFiles/set_bg_color.dir/all
+agitr/all: agitr/CMakeFiles/spawn_turtle.dir/all
 agitr/all: agitr/CMakeFiles/subscribe_to_pose.dir/all
 .PHONY : agitr/all
 
@@ -306,6 +308,7 @@ agitr/clean: agitr/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
 agitr/clean: agitr/CMakeFiles/hello.dir/clean
 agitr/clean: agitr/CMakeFiles/publish_velocity.dir/clean
 agitr/clean: agitr/CMakeFiles/publish_velocity_with_max.dir/clean
+agitr/clean: agitr/CMakeFiles/pubvel_toggle.dir/clean
 agitr/clean: agitr/CMakeFiles/reverse_cmd_vel.dir/clean
 agitr/clean: agitr/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
 agitr/clean: agitr/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
@@ -314,6 +317,7 @@ agitr/clean: agitr/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
 agitr/clean: agitr/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
 agitr/clean: agitr/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
 agitr/clean: agitr/CMakeFiles/set_bg_color.dir/clean
+agitr/clean: agitr/CMakeFiles/spawn_turtle.dir/clean
 agitr/clean: agitr/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
 agitr/clean: agitr/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
 agitr/clean: agitr/CMakeFiles/std_msgs_generate_messages_py.dir/clean
@@ -564,13 +568,48 @@ clean: agitr/CMakeFiles/publish_velocity_with_max.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target agitr/CMakeFiles/pubvel_toggle.dir
+
+# All Build rule for target.
+agitr/CMakeFiles/pubvel_toggle.dir/all:
+	$(MAKE) -f agitr/CMakeFiles/pubvel_toggle.dir/build.make agitr/CMakeFiles/pubvel_toggle.dir/depend
+	$(MAKE) -f agitr/CMakeFiles/pubvel_toggle.dir/build.make agitr/CMakeFiles/pubvel_toggle.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/he/ros/build/CMakeFiles  7
+	@echo "Built target pubvel_toggle"
+.PHONY : agitr/CMakeFiles/pubvel_toggle.dir/all
+
+# Include target in all.
+all: agitr/CMakeFiles/pubvel_toggle.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+agitr/CMakeFiles/pubvel_toggle.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/he/ros/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 agitr/CMakeFiles/pubvel_toggle.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/he/ros/build/CMakeFiles 0
+.PHONY : agitr/CMakeFiles/pubvel_toggle.dir/rule
+
+# Convenience name for target.
+pubvel_toggle: agitr/CMakeFiles/pubvel_toggle.dir/rule
+.PHONY : pubvel_toggle
+
+# clean rule for target.
+agitr/CMakeFiles/pubvel_toggle.dir/clean:
+	$(MAKE) -f agitr/CMakeFiles/pubvel_toggle.dir/build.make agitr/CMakeFiles/pubvel_toggle.dir/clean
+.PHONY : agitr/CMakeFiles/pubvel_toggle.dir/clean
+
+# clean rule for target.
+clean: agitr/CMakeFiles/pubvel_toggle.dir/clean
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target agitr/CMakeFiles/reverse_cmd_vel.dir
 
 # All Build rule for target.
 agitr/CMakeFiles/reverse_cmd_vel.dir/all:
 	$(MAKE) -f agitr/CMakeFiles/reverse_cmd_vel.dir/build.make agitr/CMakeFiles/reverse_cmd_vel.dir/depend
 	$(MAKE) -f agitr/CMakeFiles/reverse_cmd_vel.dir/build.make agitr/CMakeFiles/reverse_cmd_vel.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/he/ros/build/CMakeFiles  7
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/he/ros/build/CMakeFiles  8
 	@echo "Built target reverse_cmd_vel"
 .PHONY : agitr/CMakeFiles/reverse_cmd_vel.dir/all
 
@@ -791,7 +830,7 @@ clean: agitr/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
 agitr/CMakeFiles/set_bg_color.dir/all:
 	$(MAKE) -f agitr/CMakeFiles/set_bg_color.dir/build.make agitr/CMakeFiles/set_bg_color.dir/depend
 	$(MAKE) -f agitr/CMakeFiles/set_bg_color.dir/build.make agitr/CMakeFiles/set_bg_color.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/he/ros/build/CMakeFiles  8
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/he/ros/build/CMakeFiles  9
 	@echo "Built target set_bg_color"
 .PHONY : agitr/CMakeFiles/set_bg_color.dir/all
 
@@ -817,6 +856,41 @@ agitr/CMakeFiles/set_bg_color.dir/clean:
 
 # clean rule for target.
 clean: agitr/CMakeFiles/set_bg_color.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target agitr/CMakeFiles/spawn_turtle.dir
+
+# All Build rule for target.
+agitr/CMakeFiles/spawn_turtle.dir/all:
+	$(MAKE) -f agitr/CMakeFiles/spawn_turtle.dir/build.make agitr/CMakeFiles/spawn_turtle.dir/depend
+	$(MAKE) -f agitr/CMakeFiles/spawn_turtle.dir/build.make agitr/CMakeFiles/spawn_turtle.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/he/ros/build/CMakeFiles  10
+	@echo "Built target spawn_turtle"
+.PHONY : agitr/CMakeFiles/spawn_turtle.dir/all
+
+# Include target in all.
+all: agitr/CMakeFiles/spawn_turtle.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+agitr/CMakeFiles/spawn_turtle.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/he/ros/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 agitr/CMakeFiles/spawn_turtle.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/he/ros/build/CMakeFiles 0
+.PHONY : agitr/CMakeFiles/spawn_turtle.dir/rule
+
+# Convenience name for target.
+spawn_turtle: agitr/CMakeFiles/spawn_turtle.dir/rule
+.PHONY : spawn_turtle
+
+# clean rule for target.
+agitr/CMakeFiles/spawn_turtle.dir/clean:
+	$(MAKE) -f agitr/CMakeFiles/spawn_turtle.dir/build.make agitr/CMakeFiles/spawn_turtle.dir/clean
+.PHONY : agitr/CMakeFiles/spawn_turtle.dir/clean
+
+# clean rule for target.
+clean: agitr/CMakeFiles/spawn_turtle.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -1012,7 +1086,7 @@ clean: agitr/CMakeFiles/std_srvs_generate_messages_py.dir/clean
 agitr/CMakeFiles/subscribe_to_pose.dir/all:
 	$(MAKE) -f agitr/CMakeFiles/subscribe_to_pose.dir/build.make agitr/CMakeFiles/subscribe_to_pose.dir/depend
 	$(MAKE) -f agitr/CMakeFiles/subscribe_to_pose.dir/build.make agitr/CMakeFiles/subscribe_to_pose.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/he/ros/build/CMakeFiles  9
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/he/ros/build/CMakeFiles  11
 	@echo "Built target subscribe_to_pose"
 .PHONY : agitr/CMakeFiles/subscribe_to_pose.dir/all
 

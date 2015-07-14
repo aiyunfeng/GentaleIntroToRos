@@ -10,6 +10,7 @@
 /home/he/ros/build/agitr/CMakeFiles/hello.dir
 /home/he/ros/build/agitr/CMakeFiles/publish_velocity.dir
 /home/he/ros/build/agitr/CMakeFiles/publish_velocity_with_max.dir
+/home/he/ros/build/agitr/CMakeFiles/pubvel_toggle.dir
 /home/he/ros/build/agitr/CMakeFiles/reverse_cmd_vel.dir
 /home/he/ros/build/agitr/CMakeFiles/roscpp_generate_messages_cpp.dir
 /home/he/ros/build/agitr/CMakeFiles/roscpp_generate_messages_lisp.dir
@@ -19,6 +20,7 @@
 /home/he/ros/build/agitr/CMakeFiles/rosgraph_msgs_generate_messages_py.dir
 /home/he/ros/build/CMakeFiles/run_tests.dir
 /home/he/ros/build/agitr/CMakeFiles/set_bg_color.dir
+/home/he/ros/build/agitr/CMakeFiles/spawn_turtle.dir
 /home/he/ros/build/agitr/CMakeFiles/std_msgs_generate_messages_cpp.dir
 /home/he/ros/build/agitr/CMakeFiles/std_msgs_generate_messages_lisp.dir
 /home/he/ros/build/agitr/CMakeFiles/std_msgs_generate_messages_py.dir

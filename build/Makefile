@@ -332,6 +332,19 @@ publish_velocity_with_max/fast:
 .PHONY : publish_velocity_with_max/fast
 
 #=============================================================================
+# Target rules for targets named pubvel_toggle
+
+# Build rule for target.
+pubvel_toggle: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pubvel_toggle
+.PHONY : pubvel_toggle
+
+# fast build rule for target.
+pubvel_toggle/fast:
+	$(MAKE) -f agitr/CMakeFiles/pubvel_toggle.dir/build.make agitr/CMakeFiles/pubvel_toggle.dir/build
+.PHONY : pubvel_toggle/fast
+
+#=============================================================================
 # Target rules for targets named reverse_cmd_vel
 
 # Build rule for target.
@@ -434,6 +447,19 @@ set_bg_color: cmake_check_build_system
 set_bg_color/fast:
 	$(MAKE) -f agitr/CMakeFiles/set_bg_color.dir/build.make agitr/CMakeFiles/set_bg_color.dir/build
 .PHONY : set_bg_color/fast
+
+#=============================================================================
+# Target rules for targets named spawn_turtle
+
+# Build rule for target.
+spawn_turtle: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 spawn_turtle
+.PHONY : spawn_turtle
+
+# fast build rule for target.
+spawn_turtle/fast:
+	$(MAKE) -f agitr/CMakeFiles/spawn_turtle.dir/build.make agitr/CMakeFiles/spawn_turtle.dir/build
+.PHONY : spawn_turtle/fast
 
 #=============================================================================
 # Target rules for targets named std_msgs_generate_messages_cpp
@@ -592,6 +618,7 @@ help:
 	@echo "... hello"
 	@echo "... publish_velocity"
 	@echo "... publish_velocity_with_max"
+	@echo "... pubvel_toggle"
 	@echo "... reverse_cmd_vel"
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... roscpp_generate_messages_lisp"
@@ -600,6 +627,7 @@ help:
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... set_bg_color"
+	@echo "... spawn_turtle"
 	@echo "... std_msgs_generate_messages_cpp"
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_py"

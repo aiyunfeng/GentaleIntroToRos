@@ -248,6 +248,20 @@ publish_velocity_with_max/fast:
 .PHONY : publish_velocity_with_max/fast
 
 # Convenience name for target.
+agitr/CMakeFiles/pubvel_toggle.dir/rule:
+	cd /home/he/ros/build && $(MAKE) -f CMakeFiles/Makefile2 agitr/CMakeFiles/pubvel_toggle.dir/rule
+.PHONY : agitr/CMakeFiles/pubvel_toggle.dir/rule
+
+# Convenience name for target.
+pubvel_toggle: agitr/CMakeFiles/pubvel_toggle.dir/rule
+.PHONY : pubvel_toggle
+
+# fast build rule for target.
+pubvel_toggle/fast:
+	cd /home/he/ros/build && $(MAKE) -f agitr/CMakeFiles/pubvel_toggle.dir/build.make agitr/CMakeFiles/pubvel_toggle.dir/build
+.PHONY : pubvel_toggle/fast
+
+# Convenience name for target.
 agitr/CMakeFiles/reverse_cmd_vel.dir/rule:
 	cd /home/he/ros/build && $(MAKE) -f CMakeFiles/Makefile2 agitr/CMakeFiles/reverse_cmd_vel.dir/rule
 .PHONY : agitr/CMakeFiles/reverse_cmd_vel.dir/rule
@@ -358,6 +372,20 @@ set_bg_color: agitr/CMakeFiles/set_bg_color.dir/rule
 set_bg_color/fast:
 	cd /home/he/ros/build && $(MAKE) -f agitr/CMakeFiles/set_bg_color.dir/build.make agitr/CMakeFiles/set_bg_color.dir/build
 .PHONY : set_bg_color/fast
+
+# Convenience name for target.
+agitr/CMakeFiles/spawn_turtle.dir/rule:
+	cd /home/he/ros/build && $(MAKE) -f CMakeFiles/Makefile2 agitr/CMakeFiles/spawn_turtle.dir/rule
+.PHONY : agitr/CMakeFiles/spawn_turtle.dir/rule
+
+# Convenience name for target.
+spawn_turtle: agitr/CMakeFiles/spawn_turtle.dir/rule
+.PHONY : spawn_turtle
+
+# fast build rule for target.
+spawn_turtle/fast:
+	cd /home/he/ros/build && $(MAKE) -f agitr/CMakeFiles/spawn_turtle.dir/build.make agitr/CMakeFiles/spawn_turtle.dir/build
+.PHONY : spawn_turtle/fast
 
 # Convenience name for target.
 agitr/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule:
@@ -571,6 +599,30 @@ pubvel.cpp.s:
 	cd /home/he/ros/build && $(MAKE) -f agitr/CMakeFiles/publish_velocity.dir/build.make agitr/CMakeFiles/publish_velocity.dir/pubvel.cpp.s
 .PHONY : pubvel.cpp.s
 
+pubvel_toggle.o: pubvel_toggle.cpp.o
+.PHONY : pubvel_toggle.o
+
+# target to build an object file
+pubvel_toggle.cpp.o:
+	cd /home/he/ros/build && $(MAKE) -f agitr/CMakeFiles/pubvel_toggle.dir/build.make agitr/CMakeFiles/pubvel_toggle.dir/pubvel_toggle.cpp.o
+.PHONY : pubvel_toggle.cpp.o
+
+pubvel_toggle.i: pubvel_toggle.cpp.i
+.PHONY : pubvel_toggle.i
+
+# target to preprocess a source file
+pubvel_toggle.cpp.i:
+	cd /home/he/ros/build && $(MAKE) -f agitr/CMakeFiles/pubvel_toggle.dir/build.make agitr/CMakeFiles/pubvel_toggle.dir/pubvel_toggle.cpp.i
+.PHONY : pubvel_toggle.cpp.i
+
+pubvel_toggle.s: pubvel_toggle.cpp.s
+.PHONY : pubvel_toggle.s
+
+# target to generate assembly for a file
+pubvel_toggle.cpp.s:
+	cd /home/he/ros/build && $(MAKE) -f agitr/CMakeFiles/pubvel_toggle.dir/build.make agitr/CMakeFiles/pubvel_toggle.dir/pubvel_toggle.cpp.s
+.PHONY : pubvel_toggle.cpp.s
+
 pubvel_with_max.o: pubvel_with_max.cpp.o
 .PHONY : pubvel_with_max.o
 
@@ -643,6 +695,30 @@ set_bg_color.cpp.s:
 	cd /home/he/ros/build && $(MAKE) -f agitr/CMakeFiles/set_bg_color.dir/build.make agitr/CMakeFiles/set_bg_color.dir/set_bg_color.cpp.s
 .PHONY : set_bg_color.cpp.s
 
+spawn_turtle.o: spawn_turtle.cpp.o
+.PHONY : spawn_turtle.o
+
+# target to build an object file
+spawn_turtle.cpp.o:
+	cd /home/he/ros/build && $(MAKE) -f agitr/CMakeFiles/spawn_turtle.dir/build.make agitr/CMakeFiles/spawn_turtle.dir/spawn_turtle.cpp.o
+.PHONY : spawn_turtle.cpp.o
+
+spawn_turtle.i: spawn_turtle.cpp.i
+.PHONY : spawn_turtle.i
+
+# target to preprocess a source file
+spawn_turtle.cpp.i:
+	cd /home/he/ros/build && $(MAKE) -f agitr/CMakeFiles/spawn_turtle.dir/build.make agitr/CMakeFiles/spawn_turtle.dir/spawn_turtle.cpp.i
+.PHONY : spawn_turtle.cpp.i
+
+spawn_turtle.s: spawn_turtle.cpp.s
+.PHONY : spawn_turtle.s
+
+# target to generate assembly for a file
+spawn_turtle.cpp.s:
+	cd /home/he/ros/build && $(MAKE) -f agitr/CMakeFiles/spawn_turtle.dir/build.make agitr/CMakeFiles/spawn_turtle.dir/spawn_turtle.cpp.s
+.PHONY : spawn_turtle.cpp.s
+
 subpose.o: subpose.cpp.o
 .PHONY : subpose.o
 
@@ -685,6 +761,7 @@ help:
 	@echo "... list_install_components"
 	@echo "... publish_velocity"
 	@echo "... publish_velocity_with_max"
+	@echo "... pubvel_toggle"
 	@echo "... rebuild_cache"
 	@echo "... reverse_cmd_vel"
 	@echo "... roscpp_generate_messages_cpp"
@@ -694,6 +771,7 @@ help:
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... set_bg_color"
+	@echo "... spawn_turtle"
 	@echo "... std_msgs_generate_messages_cpp"
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_py"
@@ -714,6 +792,9 @@ help:
 	@echo "... pubvel.o"
 	@echo "... pubvel.i"
 	@echo "... pubvel.s"
+	@echo "... pubvel_toggle.o"
+	@echo "... pubvel_toggle.i"
+	@echo "... pubvel_toggle.s"
 	@echo "... pubvel_with_max.o"
 	@echo "... pubvel_with_max.i"
 	@echo "... pubvel_with_max.s"
@@ -723,6 +804,9 @@ help:
 	@echo "... set_bg_color.o"
 	@echo "... set_bg_color.i"
 	@echo "... set_bg_color.s"
+	@echo "... spawn_turtle.o"
+	@echo "... spawn_turtle.i"
+	@echo "... spawn_turtle.s"
 	@echo "... subpose.o"
 	@echo "... subpose.i"
 	@echo "... subpose.s"
